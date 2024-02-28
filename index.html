@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav.css" />
-    <title id="title_nav">Log</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <title id="title_nav">RiwiGames</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div href="#" class="logo"></div>
         <div class="nav_links">
-          <a href="#">Home</a>
-          <a href="#">Log In</a>
-          <a href="#">Log Up</a>
+          <a href="#" data-lang="home"></a>
+          <a href="#" data-lang="logIn"></a>
+          <a href="#" data-lang="register"></a>
         </div>
-        <div class="lang">en</div>
+        <div data-lang="lang" class="change-language">en</div>
       </nav>
     </header>
     <main>
-      <section class="container_forms"></section>
+      <section class="home">
+        <div class="home_content">
+          <p data-lang="log"></p>
+          <div class="button_show">
+            <button data-lang="newEvent"></button>
+            <button data-lang="expEvent"></button>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="js/translator.js"></script>
   </body>
 </html>

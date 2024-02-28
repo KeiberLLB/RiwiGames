@@ -6,13 +6,25 @@
   width: 100%;
   height: 100%;
   font-size: 25px;
+  & .nav_links {
+    display: flex;
+    gap: 25px;
+  }
   & a {
     text-decoration: none;
     color: var(--fontW);
   }
-  & .lang {
+  & a:hover {
+    color: var(--primary);
+  }
+  & .change-language {
     text-decoration: none;
     color: var(--fontW);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  & .change-language:hover {
+    color: var(--primary);
   }
   & .logo {
     background-image: url(../static/riwiLogo.png);
